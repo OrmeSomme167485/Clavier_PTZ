@@ -38,14 +38,14 @@ while True:
                         pyautogui.press('F23')
                     if ligne == "TRIGGER_F24": # SWFG
                         pyautogui.press('F24')
-                    if ligne == "TRIGGER_F": #SWFH
-                        pyautogui.press('F')
-                    if ligne == "TRIGGER_F": #SWFB
-                        pyautogui.press('F')
-                    if ligne == "TRIGGER_F": #SWZP
-                        pyautogui.press('F')
-                    if ligne == "TRIGGER_F": #SWFM
-                        pyautogui.press('F')
+                    if ligne == "TRIGGER_LA1": #SWFH
+                        pyautogui.press('LaunchApplication1')
+                    if ligne == "TRIGGER_LA2": #SWFB
+                        pyautogui.press('LaunchApplication2')
+                    if ligne == "TRIGGER_LM": #SWZP
+                        pyautogui.press('LaunchMail	')
+                    if ligne == "TRIGGER_KM": #SWFM
+                        pyautogui.press('KanjiMode')
 
                     sleep(0.01)
     except (serial.SerialException, FileNotFoundError):
