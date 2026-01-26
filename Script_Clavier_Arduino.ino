@@ -43,6 +43,8 @@ void loop() {
   if (etat == HIGH && dernierEtat == LOW) {
     Serial.println("TRIGGER_A");
     delay(100);
+
+
   }
   dernierEtat = etat;
 
