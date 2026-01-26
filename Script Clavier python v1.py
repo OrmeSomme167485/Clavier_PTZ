@@ -1,24 +1,53 @@
 import serial
 import pyautogui
-import time
+from time import sleep
 import serial.tools.list_ports
 
 NOM_PORT = "COM3"  
 BAUD_RATE = 115200
 
-print(f"Recherche de l'ESP32 sur {NOM_PORT}...")
 
 while True:
     try:
         with serial.Serial(NOM_PORT, BAUD_RATE, timeout=1) as ser:
-            print(f"Connecté à l'ESP32 sur {NOM_PORT} !")
+
             while True:
                 if ser.in_waiting > 0:
                     ligne = ser.readline().decode('utf-8').strip()
-                    if ligne == "TRIGGER_A":
-                        pyautogui.press('a')
-                        print("Touche 'a' simulée")
-                time.sleep(0.01) 
+                    if ligne == "TRIGGER_F13": # SW1
+                        pyautogui.press('F13')
+                    if ligne == "TRIGGER_F14": # SW2
+                        pyautogui.press('F14')
+                    if ligne == "TRIGGER_F15": # SW3
+                        pyautogui.press('F15')
+                    if ligne == "TRIGGER_F16": # SW4
+                        pyautogui.press('F16')
+                    if ligne == "TRIGGER_F17": # SW5
+                        pyautogui.press('F17')
+                    if ligne == "TRIGGER_F18": # SW6
+                        pyautogui.press('F18')
+                    if ligne == "TRIGGER_F19": # SW7
+                        pyautogui.press('F19')
+                    if ligne == "TRIGGER_F20": # SW8
+                        pyautogui.press('F20')
+                    if ligne == "TRIGGER_F21": # SW9
+                        pyautogui.press('F21')
+                    if ligne == "TRIGGER_F22": # SWTR
+                        pyautogui.press('F22')
+                    if ligne == "TRIGGER_F23": # SWFD
+                        pyautogui.press('F23')
+                    if ligne == "TRIGGER_F24": # SWFG
+                        pyautogui.press('F24')
+                    if ligne == "TRIGGER_F": #SWFH
+                        pyautogui.press('F')
+                    if ligne == "TRIGGER_F": #SWFB
+                        pyautogui.press('F')
+                    if ligne == "TRIGGER_F": #SWZP
+                        pyautogui.press('F')
+                    if ligne == "TRIGGER_F": #SWFM
+                        pyautogui.press('F')
+
+                    sleep(0.01)
     except (serial.SerialException, FileNotFoundError):
-        print(f"ESP32 non trouvé sur {NOM_PORT}. Réessai dans 2 secondes...")
-        time.sleep(2)
+
+        sleep(2)
