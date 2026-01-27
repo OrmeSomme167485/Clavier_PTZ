@@ -4,7 +4,7 @@ from time import sleep
 import serial.tools.list_ports
 
 NOM_PORT = "COM3"  
-BAUD_RATE = 115200
+BAUD_RATE = 9600
 
 
 while True:
@@ -38,14 +38,15 @@ while True:
                         pyautogui.press('F23')
                     if ligne == "TRIGGER_F24": # SWFG
                         pyautogui.press('F24')
-                    if ligne == "TRIGGER_LA1": #SWFH
-                        pyautogui.press('LaunchApplication1')
-                    if ligne == "TRIGGER_LA2": #SWFB
-                        pyautogui.press('LaunchApplication2')
-                    if ligne == "TRIGGER_LM": #SWZP
-                        pyautogui.press('LaunchMail	')
-                    if ligne == "TRIGGER_KM": #SWFM
-                        pyautogui.press('KanjiMode')
+                    if ligne == "TRIGGER_F25": #SWFH
+                        pyautogui.hotkey('altright','F13')
+                    if ligne == "TRIGGER_F26": #SWFB
+                        pyautogui.hotkey('altright','F14')
+                    if ligne == "TRIGGER_F27": #SWZP
+                        pyautogui.hotkey('altright','F15')
+                    if ligne == "TRIGGER_F28": #SWFM
+                        pyautogui.hotkey('altright','F16')
+
 
                     sleep(0.01)
     except (serial.SerialException, FileNotFoundError):
