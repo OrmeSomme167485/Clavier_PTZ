@@ -47,8 +47,7 @@ while True:
                     if ligne == "TRIGGER_F28": #SWFM
                         pyautogui.hotkey('altright','F16')
 
-
-                    sleep(0.01)
+                    sleep(0.02)
     except (serial.SerialException, FileNotFoundError):
 
         sleep(2)
