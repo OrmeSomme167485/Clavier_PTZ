@@ -77,67 +77,115 @@ void loop() {
 
   if (VSW1 >= 3500 ) {
     Serial.println("TRIGGER_F13");
-    delay(100);
+    delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F13");
+      }
   }
     if (VSW2 >= 3500 ) {
       Serial.println("TRIGGER_F14");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F14");
+      }
     }
     if (VSW3 >= 3500 ) {
       Serial.println("TRIGGER_F15");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F15");
+      }
     }
     if (VSW4 >= 3500 ) {
       Serial.println("TRIGGER_F16");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F16");
+      }
     }
     if (VSW5 >= 3500 ) {
       Serial.println("TRIGGER_F17");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F17");
+      }
     }
     if (VSW6 >= 3500 ) {
       Serial.println("TRIGGER_F18");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F18");
+      }
     }
     if (VSW7 >= 3500 ) {
       Serial.println("TRIGGER_F19");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F19");
+      }
     }
     if (VSW8 >= 3500 ) {
       Serial.println("TRIGGER_F20");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F20");
+      }
     }
     if (VSW9 >= 3500 ) {
       Serial.println("TRIGGER_F21");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F21");
+      }
     }
       if (VSWTR >= 3500 ) {
       Serial.println("TRIGGER_F22");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F22");
+      }
     }
     if (VSWFD >= 3500 ) {
       Serial.println("TRIGGER_F23"); 
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F23");
+      }
     }
     if (VSWFG >= 3500 ) {
       Serial.println("TRIGGER_F24");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F24");
+      }
     }
     if (VSWFH >= 3500 ) {
       Serial.println("TRIGGER_F25");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F25");
+      }
     }
     if (VSWFB >= 3500 ) {
       Serial.println("TRIGGER_F26");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F26");
+      }
     }
     if (VSWZP >= 3500 ) {
       Serial.println("TRIGGER_F27");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F27");
+      }
     }
     if (VSWZM >= 3500 ) {
       Serial.println("TRIGGER_F28");
-      delay(100);
+      delay(50);
+     if(VSW1<=3500){
+         Serial.println("DEPRESS_F28");
+      }
     }
 
 
